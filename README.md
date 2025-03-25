@@ -24,7 +24,12 @@ La interfaz gráfica está diseñada para facilitar la interacción, con una lis
 Para usuarios avanzados, el modo consola permite ejecutar comandos rápidos y eficientes.  
 
 ```bash
-/connect 192.168.1.10 5000   # Conectar con un usuario  
-/select user123             # Seleccionar usuario para chatear  
-/file /home/user/image.jpg  # Enviar archivo  
-/exit                       # Salir de la aplicación  
+/register                   # Inicia el registro: solicita nombre de usuario y puerto
+/login                      # Inicia sesión introduciendo tu ID (IP:PUERTO)
+/add IP PUERTO              # Agrega un nuevo contacto (establece conexión automáticamente)
+/connect IP PUERTO          # Establece conexión con un contacto ya agregado
+/select IP:PUERTO           # Selecciona un contacto para iniciar conversación
+/file /ruta/archivo.txt     # Envía un archivo al contacto seleccionado
+/id                         # Muestra tu propio ID de usuario
+/help                       # Muestra la lista de comandos disponibles
+/exit                       # Cierra la aplicación
